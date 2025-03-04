@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:3000"; // Backend URL
+const API_BASE_URL = process.env.API_BASE_URL || "http://localhost:3000"; // Fallback to localhost
 
 export const fetchMovies = async () => {
   try {
