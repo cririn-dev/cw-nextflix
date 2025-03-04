@@ -27,3 +27,14 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Hide scrollbar for modern browsers */
+.scrollbar-hidden {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 11 */
+}
+
+/* Hide scrollbar for Webkit-based browsers (Chrome, Safari, Edge) */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
