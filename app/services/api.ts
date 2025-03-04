@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = process.env.API_BASE_URL || "http://localhost:3000"; // Fallback to localhost
+const API_BASE_URL = process.env.API_BASE_URL || "cw-nextflix-api-production.up.railway.app"; // Fallback temporary fix
 
 export const fetchMovies = async () => {
   try {
